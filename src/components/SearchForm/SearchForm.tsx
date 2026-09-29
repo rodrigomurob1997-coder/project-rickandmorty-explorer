@@ -1,7 +1,13 @@
 import { useState, type ChangeEvent, type SubmitEvent } from "react";
 
-function SearchForm() {
-  const [query, setQuery] = useState("");
+interface SearchFormProps {
+  initialQuery: string;
+  isDisabled: boolean;
+  onSearch: (query: string) => void;
+}
+
+function SearchForm({ initialQuery, isDisabled, onSearch }: SearchFormProps) {
+  const [query, setQuery] = useState(initialQuery);
 
   function handleChange(evt: ChangeEvent<HTMLInputElement>) {
     setQuery(evt.target.value);
@@ -9,6 +15,7 @@ function SearchForm() {
 
   function handleSubmit(evt: SubmitEvent<HTMLFormElement>) {
     evt.preventDefault();
+    onSearch(query.trim());
   }
 
   return (
@@ -27,7 +34,11 @@ function SearchForm() {
           onChange={handleChange}
           required
         />
-        <button type="submit" className="button search-form__button">
+        <button
+          type="submit"
+          className="button search-form__button"
+          disabled={isDisabled}
+        >
           Buscar
         </button>
       </div>

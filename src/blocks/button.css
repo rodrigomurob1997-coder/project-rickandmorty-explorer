@@ -24,3 +24,12 @@
   outline: 3px solid var(--color-accent-hover);
   outline-offset: 2px;
 }
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  background-color: var(--color-accent);
+}
