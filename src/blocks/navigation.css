@@ -1,0 +1,33 @@
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.navigation__link:hover {
+  color: var(--color-text);
+}
+
+.navigation__link_active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.navigation__link_active:hover {
+  color: var(--color-accent-hover);
+}
