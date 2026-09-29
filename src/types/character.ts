@@ -14,3 +14,21 @@ export interface Character {
   location: CharacterLocation;
   image: string;
 }
+
+export interface PageInfo {
+  count: number;
+  pages: number;
+  next: string | null;
+  prev: string | null;
+}
+
+export interface CharactersPage {
+  info: PageInfo;
+  results: Character[];
+}
+
+export interface CharactersSearch {
+  query: string;
+  characters: Character[];
+  nextPageUrl: string | null;
+}

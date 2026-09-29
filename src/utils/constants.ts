@@ -7,9 +7,18 @@ export const AUTHOR_NAME = "Rodrigo Muro Barajas";
 export const REPOSITORY_URL =
   "https://github.com/rodrigomurob1997-coder/project-rickandmorty-explorer";
 
+export const API_BASE_URL = "https://rickandmortyapi.com/api";
+
 export const API_DOCS_URL = "https://rickandmortyapi.com/documentation";
 
 export const TRIPLETEN_URL = "https://tripleten.com/";
+
+export const SEARCH_STORAGE_KEY = "rickAndMortySearch";
+
+export const NOT_FOUND_MESSAGE = "No se encontró nada";
+
+export const REQUEST_ERROR_MESSAGE =
+  "Algo salió mal con la solicitud. Puede ser un problema de conexión o del servidor. Inténtalo de nuevo más tarde.";
 
 export const STATUS_LABELS: Record<CharacterStatus, string> = {
   Alive: "Vivo",
