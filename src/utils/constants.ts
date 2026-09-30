@@ -1,4 +1,4 @@
-import type { CharacterStatus } from "../types/character";
+import type { CharactersPage, CharacterStatus } from "../types/character";
 
 export const APP_TITLE = "Rick and Morty Explorer";
 
@@ -8,6 +8,13 @@ export const REPOSITORY_URL =
   "https://github.com/rodrigomurob1997-coder/project-rickandmorty-explorer";
 
 export const API_BASE_URL = "https://rickandmortyapi.com/api";
+
+export const NOT_FOUND_STATUS = 404;
+
+export const EMPTY_PAGE: CharactersPage = {
+  info: { count: 0, pages: 0, next: null, prev: null },
+  results: [],
+};
 
 export const API_DOCS_URL = "https://rickandmortyapi.com/documentation";
 

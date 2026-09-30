@@ -1,12 +1,5 @@
-import { API_BASE_URL } from "./constants";
+import { API_BASE_URL, EMPTY_PAGE, NOT_FOUND_STATUS } from "./constants";
 import type { CharactersPage } from "../types/character";
-
-const NOT_FOUND_STATUS = 404;
-
-const EMPTY_PAGE: CharactersPage = {
-  info: { count: 0, pages: 0, next: null, prev: null },
-  results: [],
-};
 
 async function requestCharacters(
   url: string,
