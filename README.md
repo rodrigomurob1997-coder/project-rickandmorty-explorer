@@ -2,7 +2,7 @@
 
 Proyecto final del programa de Desarrollo Web de TripleTen.
 
-**Aplicación desplegada:** _pendiente de despliegue_
+**Aplicación desplegada:** [https://project-rickandmorty-explorer.netlify.app](https://project-rickandmorty-explorer.netlify.app)
 
 ## Descripción
 
